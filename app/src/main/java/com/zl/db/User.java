@@ -11,6 +11,7 @@ public class User {
     private Integer id;
     private String name;
     private String password;
+    private Integer status;
 
     public User() {
     }
@@ -19,6 +20,14 @@ public class User {
         this.id = id;
         this.name = name;
         this.password = password;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 
     public Integer getId() {

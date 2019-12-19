@@ -28,5 +28,14 @@
         android:layout_height="wrap_content"
         android:text="delete"
         android:onClick="delete"/>
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:onClick="login"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分库插入"
+        android:onClick="library_insert"/>
 </LinearLayout>
