@@ -12,6 +12,7 @@ import com.zl.db.db.BaseDaoFactory;
 import com.zl.db.db.UserDao;
 import com.zl.db.subdb.BaseDaoSubFactory;
 import com.zl.db.subdb.PhotoDao;
+import com.zl.db.update.UpdateManager;
 
 import java.util.Date;
 import java.util.List;
@@ -88,5 +89,14 @@ public class MainActivity extends AppCompatActivity {
         photo.setTime(new Date().toString());
         PhotoDao photoDao = BaseDaoSubFactory.getInstance().getBaseDao(PhotoDao.class,Photo.class);
         photoDao.insert(photo);
+    }
+
+    public void subInsert(View view) {
+
+    }
+
+    public void newVersion(View view) {
+        UpdateManager updateManager = new UpdateManager();
+        updateManager.startUpdateDb(MainActivity.this);
     }
 }
